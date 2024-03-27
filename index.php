@@ -1,16 +1,26 @@
 <?php
 
-require 'controller/HomeController.php';
+    require 'controller/HomeController.php';
 
-if (isset($_GET['page'])) {
+    try {
+        if (isset($_GET['page'])) {
 
-    $page = $_GET['page'];
+            $page = $_GET['page'];
 
-    switch ($page) {
-        case 'home':
+            switch ($page) {
+                case '':
+
+                break;
+                default:
+                    $home = new HomeController();
+                    $test = $home->home();
+                break;
+            }
+        }
+        else {
             $home = new HomeController();
             $test = $home->home();
-        break;
+        }
+    } catch (Exception $e) {
+        $error = $e->getMessage();
     }
-
-}
