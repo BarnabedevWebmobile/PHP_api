@@ -1,0 +1,17 @@
+ul span li img{
+    max-height: 200px;
+    width: auto;
+}
+ul span{
+    padding: 45px;
+    width: 140px;
+    height: 270px;
+    background-color: gray;
+    border-radius: 25px;
+     margin: 90px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
