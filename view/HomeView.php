@@ -4,7 +4,7 @@ $title = 'home';
 ob_start();
 ?>
 
-<h1>le titre</h1>
+<h1>la liste des personnages de dragon ball super</h1>
 
 <ul>
     <?php
@@ -16,5 +16,5 @@ ob_start();
 
 <?php
 $content = ob_get_clean();
-require 'view/BaseView.php'
+require 'view/BaseView.php';
 ?>
