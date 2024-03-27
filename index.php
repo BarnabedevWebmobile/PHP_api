@@ -8,7 +8,8 @@ if (isset($_GET['page'])) {
 
     switch ($page) {
         case 'home':
-
+            $home = new HomeController();
+            $test = $home->home();
         break;
     }
 

@@ -6,8 +6,6 @@
     <title><?= $title ?></title>
 </head>
 <body>
-    <h1>123</h1>
-
     <?= $content ?>
 </body>
 </html>
